@@ -25,6 +25,7 @@
 }
 .tabcontent {
     width: 850px;
+    height: 550px;
     position: relative;
     img {
         width: 100%;
@@ -37,6 +38,7 @@
         right: -177px;
         width: 550px;
         height: 359px;
+        border-radius: 5%;
         background: rgba(251, 254, 93, 0.8);
         padding: 50px;
         font-size: 24px;
@@ -63,13 +65,31 @@
         font-size: 18px;
         font-weight: 300;
         margin-top: 10px;
-        color: rgba(0, 0, 0, 0.6);
+        color: rgba(0, 0, 0, 0.767);
         cursor: pointer;
         transition: 0.3s all;
         &_active {
-            color: #000;
+            color: rgba(0, 0, 0, 0.863);
             font-size: 22px;
             font-weight: 700;
         }
+    }
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
     }
 }
