@@ -18,7 +18,7 @@
             </nav>
         </div>
         <div class="header__right-block">
-            <button class="btn btn_white">Связаться с нами</button>
+            <button data-modal class="btn btn_white">Связаться с нами</button>
         </div>
     </header>
     <div class="sidepanel">
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="offer__action">
-                <button class="btn btn_dark">Связаться с нами</button>
+                <button data-modal class="btn btn_dark">Связаться с нами</button>
             </div>
         </div>
         <div class="container">
@@ -242,26 +242,26 @@
                     Мы ценим каждого клиента и предлагаем вам стать одним из них на очень выгодных условиях. 
                     Каждому, кто закажет доставку питание на неделю, будет предоставлена скидка в размере <span>20%!</span>
                     <br><br>
-                    Акция закончится 20 мая в 00:00
+                    Акция закончится 1 января в 00:00
                 </div>
             </div>
             <div class="promotion__timer">
                 <div class="title">Осталось до конца акции:</div>
                 <div class="timer">
                     <div class="timer__block">
-                        <span id="days">12</span>
+                        <span id="days">0</span>
                         дней
                     </div>
                     <div class="timer__block">
-                        <span id="hours">20</span>
+                        <span id="hours">0</span>
                         часов
                     </div>
                     <div class="timer__block">
-                        <span id="minutes">56</span>
+                        <span id="minutes">0</span>
                         минут
                     </div>
                     <div class="timer__block">
-                        <span id="seconds">20</span>
+                        <span id="seconds">0</span>
                         секунд
                     </div>
                 </div>
@@ -291,7 +291,7 @@
         <div class="modal__dialog">
             <div class="modal__content">
                 <form action="#">
-                    <div class="modal__close">&times;</div>
+                    <div data-close class="modal__close">&times;</div>
                     <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
                     <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
                     <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
