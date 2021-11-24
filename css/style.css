@@ -166,7 +166,8 @@ a {
   .tabheader__items {
     margin-top: 35px;
     padding-left: 26px;
-    border-left: 1px solid black; }
+    border-left: 1px solid black;
+    cursor: pointer; }
   .tabheader__item {
     font-weight: bold;
     font-size: 18px;
