@@ -56,14 +56,22 @@ a {
   .header__left-block {
     display: flex;
     justify-content: space-between;
-    min-width: 550px; }
+    width: 550px; }
+    @media (max-width: 1360px) {
+      .header__left-block {
+        position: relative;
+        right: 5rem;
+        justify-content: space-around; } }
   .header__logo {
-    max-width: 170px; }
+    width: 170px; }
     .header__logo img {
       width: 100%; }
   .header__links {
     display: flex;
     align-items: center; }
+    @media (min-width: 280px) {
+      .header__links {
+        font-size: 25px; } }
   .header__link {
     position: relative;
     margin-right: 45px;
@@ -127,6 +135,9 @@ a {
   height: 900px;
   background: rgba(146, 242, 255, 0.15);
   z-index: -1; }
+  @media (max-width: 1130px) {
+    .bgc_blue {
+      display: none; } }
 
 .tabcontainer {
   display: flex;
